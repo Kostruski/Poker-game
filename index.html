@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Poker Game</title>
+    </head>
+
+    <body> 
+     <div class="wrapper">
+        <div class="controls">
+            <div class="leftPanel">
+              <button id="dealBtn" class="button" onclick="createDeck()">DEAL CARDS</button>
+            </div>
+            <div class="rightPanel">
+                <div class="box">
+                <div id="currentScore" class="display">0</div>
+                <p>current score</p>
+                </div>
+                
+                <div class="box">
+                <div id="totalScore" class="display">0</div>
+                <p>total score</p>
+                </div>
+
+                <div class="box">
+                <div id="roundNumber" class="display">0</div>
+                <p>round number</p>
+                </div>
+
+                <div class="box">
+                <div id="average" class="display">0</div>
+                <p>average</p>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            
+
+
+        </div>
+        <div class="rowsDisplay">
+            <div class ="lefRowsColumn">
+                   <div class="row"><button class="win" id ="win1" onclick="row1.winner()">WINNER</button><button class="plus" id ="btn1" onclick="row1.unfold()">+</button></div>
+                   <div class="row"><button class="win" id ="win2" onclick="row2.winner()">WINNER</button><button class="plus" id ="btn2" onclick="row2.unfold()">+</button></div>
+                   <div class="row"><button class="win" id ="win3" onclick="row3.winner()">WINNER</button><button class="plus" id = "btn3" onclick="row3.unfold()">+</button></div>
+                   <div class="row"><button class="win" id ="win4" onclick="row4.winner()">WINNER</button><button class="plus" id = "btn4" onclick="row4.unfold()">+</button></div>
+            </div>
+            <div class="rightRowsColumn">
+            <div id="row1" class="row"></div>
+            <div id="row2" class="row"></div>
+            <div id="row3" class="row"></div>
+            <div id="row4" class="row"></div>
+            </div>
+        </div>
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    </div>      
+        <script src="app.js"></script>
+    </body>
+</html>

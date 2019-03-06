@@ -1,0 +1,147 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+body {
+    background-image: url(maze.png);
+    font-size: 30px;
+    text-align: center;
+    font-family: Lato;
+    font-weight: bold;
+}
+
+.wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 5px;
+    }
+
+    
+    .rightPanel {
+        float: left;
+        width: 50%;
+        height: 100px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }   
+
+    .leftPanel
+        {
+        float: left;
+        width: 50%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }   
+
+  
+    p {
+        font-size: 10px;
+        font-weight: normal;
+    }
+
+    .rowsDisplay {
+        width: 100%;
+        display: flex;
+        
+    }
+
+    .row {
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;  
+        margin-bottom: 30px;
+        height: 120px;
+        
+    }
+
+    img {
+        max-height: 120px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+        border: 1px solid darkgrey;
+        border-radius: 3px;
+    }
+
+    .notVisible {
+        opacity: 0;
+        }
+    
+    .visible {
+        opacity: 1;
+    }
+
+    .winner {
+        width: 95%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;  
+        margin-bottom: 30px;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .button
+     {
+        
+        padding: 5px;
+                      
+    }
+    .plus:disabled,
+    .win:disabled,
+    .button[disabled] {
+        pointer-events: none;
+        background-color: rgba(218, 212, 240, 0.24);
+    }
+
+  
+   
+    .win
+    {
+     width: 90px;  
+        
+    }
+
+    .plus {
+       
+    }
+
+    
+   
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .win:hover {
+        cursor: pointer;
+    }
+
+    .plus:hover {
+        cursor: pointer;
+    }
+
+    .plus,
+    .win,
+    .button {
+        font-family: Lato;
+        background-color: lightgray;
+        border: 1px solid gray;
+        padding: 3%;
+        margin-left: 20%;
+    }
+
+    .plus {
+        width: 25px;
+    }
+
+    
