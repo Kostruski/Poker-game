@@ -9,3 +9,5 @@ Guessing is not a good strategy, try to estimate the odds. Just like in real Tex
 Try to maintain high average playing some more rounds, quick win followed by quick loss is not the bracelet winners path.
 
 Texas Holdem rules, 5 cards out of 7. 
+
+written with Vanilla JS - my first app, pure spagetti code.
